@@ -203,6 +203,26 @@ function IOSDevice({
   children, width = 402, height = 874, dark = false,
   title, keyboard = false,
 }) {
+  const isEmbedded = (() => { try { return window.self !== window.top; } catch (e) { return true; } })();
+  if (!isEmbedded) {
+    // Real deployed app on a real device/browser: skip the decorative phone
+    // bezel/fake status bar entirely — the OS already shows its own chrome.
+    // Fill the real viewport and respect real safe-area insets instead.
+    return (
+      <div data-om-starter="ios-frame" style={{
+        width: '100vw', height: '100dvh', position: 'relative', overflow: 'hidden',
+        background: dark ? '#000' : '#F2F2F7',
+        fontFamily: '-apple-system, system-ui, sans-serif',
+        WebkitFontSmoothing: 'antialiased',
+      }}>
+        <div style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
+          {title !== undefined && <IOSNavBar title={title} dark={dark} />}
+          <div style={{ flex: 1, overflow: 'auto' }}>{children}</div>
+          {keyboard && <IOSKeyboard dark={dark} />}
+        </div>
+      </div>
+    );
+  }
   return (
     // data-om-starter: inert presence marker — Claude Design's starter-usage
     // probe reads it; it renders nothing. Keep it on this root element.

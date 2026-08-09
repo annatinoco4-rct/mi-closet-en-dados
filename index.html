@@ -199,7 +199,7 @@
 <x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" hint-size="402,874">
   <div style="height:100%;display:flex;flex-direction:column;background:{{ phoneBg }};position:relative;overflow:hidden">
     <sc-if value="{{ !emergencyMode }}" hint-placeholder-val="{{ true }}">
-    <div style="flex:1;overflow-y:auto;overflow-x:hidden;position:relative;padding-top:59px" onTouchStart="{{ onContentTouchStart }}" onTouchEnd="{{ onContentTouchEnd }}">
+    <div style="flex:1;overflow-y:auto;overflow-x:hidden;position:relative;padding-top:max(59px, env(safe-area-inset-top))" onTouchStart="{{ onContentTouchStart }}" onTouchEnd="{{ onContentTouchEnd }}">
       <div style="width:100%;padding:3px 0;display:flex;flex-direction:column;gap:2px"><div style="height:1px;width:100%;background:#D99A2B;opacity:0.55"></div><div style="height:1px;width:100%;background:#D99A2B;opacity:0.28"></div></div>
       <div style="width:100%;display:flex;align-items:center;justify-content:space-around;padding:10px 6px;font-size:11px;font-weight:800;text-align:center;background:{{ rainbowBarBg }};border-bottom:2px solid #800020;color:#800020">
         <span>🎲 100% random</span><span>💾 se guarda solo</span><span>🔒 solo tuyo</span>
@@ -1603,7 +1603,7 @@
     </sc-if>
 
     <sc-if value="{{ emergencyMode }}" hint-placeholder-val="{{ false }}">
-      <div style="position:absolute;inset:0;z-index:60;background:#F4F1EC;display:flex;flex-direction:column;padding-top:59px;overflow-y:auto">
+      <div style="position:absolute;inset:0;z-index:60;background:#F4F1EC;display:flex;flex-direction:column;padding-top:max(59px, env(safe-area-inset-top));overflow-y:auto">
         <div style="display:flex;justify-content:flex-end;padding:10px 16px 0">
           <button onClick="{{ closeEmergency }}" style="background:none;border:none;color:#6B665F;font-size:13px;font-weight:700;cursor:pointer">✕ Salir</button>
         </div>
