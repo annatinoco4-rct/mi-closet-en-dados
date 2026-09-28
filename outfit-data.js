@@ -69,6 +69,8 @@ export const DICE = {
     { n: "Tank de lunares", e: "⚫", v: ["elle", "brunch", "offduty", "comfy", "homeoffice", "corporate"], colorFamilies: ["neutral", "negro"], img: R("assets/clothing/top-tank-lunares.png"), pos: { top: 20, left: 70, width: 56 } },
     { n: "Polo gris sin mangas", e: "🩶", v: ["academia", "oldmoney", "corporate", "offduty", "astrofriday", "conferencia", "brunch", "homeoffice"], colorFamilies: ["neutral", "plateado"], img: R("assets/clothing/top-polo-gris-sin-mangas.png"), pos: { top: 12, left: 70, width: 56 } },
     { n: "Saco café con moño", e: "🤎", v: ["academia", "oldmoney", "elle", "corporate", "junta", "conferencia", "astrofriday", "brunch"], colorFamilies: ["cafe", "dorado"], img: R("assets/clothing/top-saco-cafe-mono.png"), pos: { top: 8, left: 70, width: 72 } },
+    { n: "Cárdigan argyle lila", e: "💜", v: ["academia", "oldmoney", "elle", "brunch", "homeoffice", "comfy", "conferencia", "astrofriday"], colorFamilies: ["neutral", "plateado", "rosa"], img: R("assets/clothing/top-cardigan-argyle-lila.png"), pos: { top: 10, left: 70, width: 70 } },
+    { n: "Top off-shoulder blanco con brillos", e: "🤍", v: ["vsmodel", "slutty", "elle", "brunch", "offduty", "grunge"], colorFamilies: ["neutral", "plateado"], img: R("assets/clothing/top-off-shoulder-blanco-brillos.png"), pos: { top: 12, left: 70, width: 66 } },
     { n: "Hoodie crop rosa palo (set)", e: "🩷", vibeOverrides: { homeoffice: { baseWeight: 4 } }, v: ["comfy", "homeoffice", "elle", "offduty", "brunch"], colorFamilies: ["rosa", "nude", "neutral"], set: "set-rosa-brillos", flatScale: 0.75, img: R("assets/clothing/top-hoodie-crop-rosa.png"), pos: { top: 8, left: 70, width: 54 } },
   ]},
   bottom: { label: "BOTTOM", faces: [
@@ -93,6 +95,7 @@ export const DICE = {
     { n: "Mini falda piano", e: "🎹", v: ["grunge", "academia", "slutty", "offduty", "astrofriday", "elle"], colorFamilies: ["negro", "neutral"], img: R("assets/clothing/bottom-mini-falda-piano.png"), pos: { top: 40, left: 50, width: 62 } },
     { n: "Pantalón azul rayas con encaje", e: "🩵", v: ["comfy", "homeoffice", "brunch", "offduty", "grunge", "elle", "corporate", "junta", "conferencia"], colorFamilies: ["azul", "negro"], img: R("assets/clothing/bottom-pantalon-rayas-encaje-azul.png"), pos: { top: 34, left: 50, width: 104 } },
     { n: "Falda-short de cuadros azul", e: "🩵", v: ["academia", "elle", "brunch", "offduty", "astrofriday", "grunge", "slutty"], colorFamilies: ["azul", "neutral"], img: R("assets/clothing/bottom-falda-short-cuadros-azul.png"), pos: { top: 40, left: 50, width: 62 } },
+    { n: "Pantalón globo gris", e: "🩶", v: ["comfy", "homeoffice", "offduty", "grunge", "brunch", "academia"], colorFamilies: ["neutral", "plateado"], img: R("assets/clothing/bottom-pantalon-globo-gris.png"), pos: { top: 36, left: 50, width: 80 } },
     { n: "Falda-short olanes rosa palo (set)", e: "🩷", vibeOverrides: { homeoffice: { baseWeight: 4 } }, v: ["comfy", "homeoffice", "elle", "offduty", "brunch"], colorFamilies: ["rosa", "nude", "neutral"], set: "set-rosa-brillos", img: R("assets/clothing/bottom-falda-short-olanes-rosa.png"), pos: { top: 40, left: 50, width: 58 } },
   ]},
   shoes: { label: "CALZADO", faces: [
